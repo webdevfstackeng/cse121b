@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W06: Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Global Current Weather Forecast</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button id="searchBtn">Search</button>
+    <div id="weatherInfo"></div>
+  </div>
+  <footer>
+    &copy;<span id="year"></span> | Week 06 - Fetching Weather Forecast Data | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.querySelector("#year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project.js"></script>
+  </body>
+</html>
